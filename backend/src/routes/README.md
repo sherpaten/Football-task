@@ -1,0 +1,1 @@
+This file is responsible for creating routes for different API Calls. It imports all the controllers and use them in the API Calls.

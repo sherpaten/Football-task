@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: "Inter", sans-serif;
+}
+a {
+  @apply hover:underline hover:text-blue-400;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.alert {
+  @apply p-4 mb-4 text-sm rounded-lg;
+}
+
+.alert-info {
+  @apply text-blue-800 bg-blue-100 dark:bg-gray-800 dark:text-blue-400;
+}
+
+.alert-error {
+  @apply bg-red-100 dark:bg-gray-800 dark:text-red-400 text-red-800;
+}
+
+.alert-success {
+  @apply text-green-800 bg-green-100 dark:bg-gray-800 dark:text-green-400;
+}
+
+.alert-warn {
+  @apply text-yellow-800 bg-yellow-100 dark:bg-gray-800 dark:text-yellow-300;
+}
+
+.games-table {
+  @apply w-full table-auto;
+}
+
+.games-table th {
+  @apply text-left;
+}
+
+.games-table thead tr th,
+.games-table tbody td {
+  @apply p-2;
+}
+
+.games-table tbody tr:nth-child(odd) {
+  @apply bg-green-950;
+}
